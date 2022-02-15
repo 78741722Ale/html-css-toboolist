@@ -93,7 +93,7 @@ main {
 hr {
     margin-top: 45px;
     display: block;
-    color: rgba(128, 128, 128, 0.2);
+    color: rgba(128, 128, 128, 0.05);
 }
 
 .Button {
