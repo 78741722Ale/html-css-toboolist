@@ -10,13 +10,12 @@ Website - #EC4A9D;
 Sales - #A3D116;
 */
 
+/* Utilities */
+
 :root 
 {
 --body-color: #F6F8F9;
---heading-color: #df2d4b;
---Task-color : #14AAF5;
---Invisible Task-Color/HR : #CED4D8;
---secondary-color: #fb7087;
+--header-color: #FFFFFF;
 }
 
 body {
@@ -24,8 +23,41 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.Logo {
-    width: 100px;
+/* Header */
+
+header 
+{
+    background-color: var(--header-color);
+}
+
+
+#site_header {
+    display: flex;
+    margin-left: 10px;
+    padding : 20px;
+}
+
+#img 
+{
+    width: 100px; 
+}
+
+.Inline { 
+    display:inline-block;
+    margin-top: auto;
+    padding-left : 10px;
+    text-align:center;
+    width :max-content;
+    height :max-content;
+}
+
+.IText { 
+    display:inline-block;
+    margin-top: auto;
+    padding: 10px;
+    text-align:center;
+    width :max-content;
+    height :max-content;
 }
 
 
