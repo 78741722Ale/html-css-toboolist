@@ -16,7 +16,7 @@ Circle Red - #BB2C2C;
 
 /* Utilities */
 
-/* :root 
+:root 
 {
 --body-color: #F6F8F9;
 --header-color: #FFFFFF;
@@ -28,12 +28,12 @@ Circle Red - #BB2C2C;
 --RosaButton-Color : #EC4A9D;
 --OButton-Color: #FF9B00;
 --Invisible-color: rgba(128, 128, 128, 0.5);
-} */
+}
 
 body {
     margin: auto;
     width: 1100px;
-    background-color: #F6F8F9;
+    background-color: var(--body-color);
     font-family: 'Lato', sans-serif;
     margin: 0;
 }
@@ -44,7 +44,7 @@ main {
 
 /* Header */
 #site_header {
-    background-color: #FFFFFF;
+    background-color: var(--header-color);
     height: 50px;
     display: flex;
     margin-left: 0%;
@@ -81,7 +81,7 @@ main {
 
 .Container {
     position: relative;
-    background-color: #FFFFFF;
+    background-color: var(--header-color);
     height: max-content;
     width :800px;
     padding-top:10px;
@@ -108,7 +108,7 @@ hr {
     position: absolute;
     margin-left : 30px;
     margin-top: 15px;
-    background-color: #14AAF5;
+    background-color: var(--BButton-color);
     color: white;
 }
 
@@ -116,7 +116,7 @@ hr {
     position: absolute;
     margin-left : 120px;
     margin-top: 15px;
-    color: rgba(128, 128, 128, 0.5);
+    color: var(--Invisible-color);
     border: 0.5px solid rgba(128, 128, 128, 0.5);
 }
 
@@ -157,7 +157,7 @@ hr {
     border-radius: 10px;
     padding: 10px;
     margin-left : 10px;
-    background-color: #14AAF5;
+    background-color: var(--BButton-color);
     color: white;
 }
 
@@ -168,7 +168,7 @@ hr {
     border-radius: 10px;
     padding: 10px;
     margin-left : 10px;
-    background-color: #AB5DE6;
+    background-color: var(--PButton-Color);
     color: white;
 }
 
@@ -179,7 +179,7 @@ hr {
     border-radius: 10px;
     padding: 10px;
     margin-left : 10px;
-    background-color: #EC4A9D;
+    background-color: var(--RosaButton-Color);
     color: white;
 }
 
@@ -190,7 +190,7 @@ hr {
     border-radius: 10px;
     padding: 10px;
     margin-left : 10px;
-    background-color: #2CC6AB;
+    background-color: var(--RButton-Color);
     color: white;
 }
 
@@ -201,7 +201,7 @@ hr {
     border-radius: 10px;
     padding: 10px;
     margin-left : 10px;
-    background-color: #A3D116;
+    background-color: var(--SButton-Color);
     color: white;
 }
 
@@ -212,6 +212,6 @@ hr {
     border-radius: 10px;
     padding: 10px;
     margin-left : 10px;
-    background-color: #FF9B00;
+    background-color: var(--OButton-Color);
     color: white;
 }
