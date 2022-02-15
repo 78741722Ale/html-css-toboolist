@@ -3,11 +3,13 @@ Header - #FFFFFF;
 colore del Body : #F6F8F9;
 Task-color : 
 Add Task / Editorial - #14AAF5;
+Invisible : #EAEDEF
 Q1 Goals - #AB5DE6;
 Recruiting - #2CC6AB;
 Mobile - #FF9B00;
 Website - #EC4A9D;
 Sales - #A3D116;
+Circle Green - #5FD3BF;
 */
 
 /* Utilities */
@@ -16,36 +18,39 @@ Sales - #A3D116;
 {
 --body-color: #F6F8F9;
 --header-color: #FFFFFF;
+--BButton-color: #14AAF5;
+--Editorial-color: #14AAF5;
+--Invisible-color: rgba(128, 128, 128, 0.5);
 }
 
 body {
     background-color: var(--body-color);
     font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+main {
+    background-color: var(--body-color);
 }
 
 /* Header */
 
-header 
-{
-    background-color: var(--header-color);
-}
-
-
 #site_header {
+    background-color: var(--header-color);
+    height: 50px;
     display: flex;
-    margin-left: 10px;
+    margin-left: 0%;
     padding : 20px;
 }
 
 #img 
 {
-    width: 100px; 
+    width: 50px; 
 }
 
 .Inline { 
     display:inline-block;
     margin-top: auto;
-    padding-left : 10px;
     text-align:center;
     width :max-content;
     height :max-content;
@@ -54,12 +59,75 @@ header
 .IText { 
     display:inline-block;
     margin-top: auto;
-    padding: 10px;
+    padding: 5px;
     text-align:center;
     width :max-content;
     height :max-content;
 }
 
+/* Main */
+#site_main {
+    margin-top: 20px;
+    align-items: center;
+}
+
+.Container {
+    position: relative;
+    background-color: var(--header-color);
+    height: 1000px;
+    width :1200px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+hr {
+    margin-top: 45px;
+    display: block;
+    color: rgba(128, 128, 128, 0.2);
+}
+
+.Button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.Blue {
+    position: absolute;
+    margin-left : 30px;
+    margin-top: 15px;
+    background-color: var(--BButton-color);
+    color: white;
+}
+
+.Invisible {
+    position: absolute;
+    margin-left : 120px;
+    margin-top: 15px;
+    color: var(--Invisible-color);
+    border: 0.5px solid rgba(128, 128, 128, 0.5);
+}
+
+/* New Task */
+
+.Margin {
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+.InlineH2 {
+    display: inline-block;
+}
+
+.CircleGreen {
+    font-size: 0.75rem;
+    color: #5FD3BF;
+    border: 1px solid #5FD3BF;
+    padding: 1px 4px;
+    border-radius: 50%;
+}
 
 
 
