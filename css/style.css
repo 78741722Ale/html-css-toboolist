@@ -1,4 +1,5 @@
 /* Palette Colori da Figma 
+
 Header - #FFFFFF;
 colore del Body : #F6F8F9;
 Task-color : 
@@ -23,11 +24,15 @@ Circle Red - #BB2C2C;
 --Editorial-color: #14AAF5;
 --PButton-Color: #AB5DE6;
 --RButton-Color: #2CC6AB;
+--SButton-Color: #A3D116;
+--RosaButton-Color : #EC4A9D;
 --OButton-Color: #FF9B00;
 --Invisible-color: rgba(128, 128, 128, 0.5);
 }
 
 body {
+    margin: auto;
+    width: 1100px;
     background-color: var(--body-color);
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -38,7 +43,6 @@ main {
 }
 
 /* Header */
-
 #site_header {
     background-color: var(--header-color);
     height: 50px;
@@ -79,7 +83,7 @@ main {
     position: relative;
     background-color: var(--header-color);
     height: max-content;
-    width :1200px;
+    width :800px;
     padding-top:10px;
     padding-bottom:50px;
     margin: auto;
@@ -93,8 +97,8 @@ hr {
 }
 
 .Button {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px;
@@ -117,6 +121,7 @@ hr {
 }
 
 /* New Task - Today - Upcoming */
+/* And all the Button classes */
 
 .Margin {
     margin-left: 30px;
@@ -167,6 +172,17 @@ hr {
     color: white;
 }
 
+.Rosa {
+    font-size: 0.7rem;
+    position: absolute;
+    line-height: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left : 10px;
+    background-color: var(--RosaButton-Color);
+    color: white;
+}
+
 .GreenRecr {
     font-size: 0.7rem;
     position: absolute;
@@ -175,6 +191,17 @@ hr {
     padding: 10px;
     margin-left : 10px;
     background-color: var(--RButton-Color);
+    color: white;
+}
+
+.GreenRecr_2 {
+    font-size: 0.7rem;
+    position: absolute;
+    line-height: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left : 10px;
+    background-color: var(--SButton-Color);
     color: white;
 }
 
