@@ -10,6 +10,7 @@ Mobile - #FF9B00;
 Website - #EC4A9D;
 Sales - #A3D116;
 Circle Green - #5FD3BF;
+Circle Red - #BB2C2C;
 */
 
 /* Utilities */
@@ -20,6 +21,9 @@ Circle Green - #5FD3BF;
 --header-color: #FFFFFF;
 --BButton-color: #14AAF5;
 --Editorial-color: #14AAF5;
+--PButton-Color: #AB5DE6;
+--RButton-Color: #2CC6AB;
+--OButton-Color: #FF9B00;
 --Invisible-color: rgba(128, 128, 128, 0.5);
 }
 
@@ -67,15 +71,17 @@ main {
 
 /* Main */
 #site_main {
-    margin-top: 20px;
+    margin-top: 50px;
     align-items: center;
 }
 
 .Container {
     position: relative;
     background-color: var(--header-color);
-    height: 1000px;
+    height: max-content;
     width :1200px;
+    padding-top:10px;
+    padding-bottom:50px;
     margin: auto;
     border-radius: 10px;
 }
@@ -110,7 +116,7 @@ hr {
     border: 0.5px solid rgba(128, 128, 128, 0.5);
 }
 
-/* New Task */
+/* New Task - Today - Upcoming */
 
 .Margin {
     margin-left: 30px;
@@ -127,7 +133,58 @@ hr {
     border: 1px solid #5FD3BF;
     padding: 1px 4px;
     border-radius: 50%;
+    margin-right: 5px;
 }
 
+.CircleRed {
+    font-size: 0.75rem;
+    color: #bb2c2c;
+    border: 1px solid #bb2c2c;
+    padding: 1px 4px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
 
+.Blue_2 {
+    font-size: 0.7rem;
+    position: absolute;
+    line-height: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left : 10px;
+    background-color: var(--BButton-color);
+    color: white;
+}
 
+.Purple {
+    font-size: 0.7rem;
+    position: absolute;
+    line-height: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left : 10px;
+    background-color: var(--PButton-Color);
+    color: white;
+}
+
+.GreenRecr {
+    font-size: 0.7rem;
+    position: absolute;
+    line-height: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left : 10px;
+    background-color: var(--RButton-Color);
+    color: white;
+}
+
+.Orange {
+    font-size: 0.7rem;
+    position: absolute;
+    line-height: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left : 10px;
+    background-color: var(--OButton-Color);
+    color: white;
+}
