@@ -1,0 +1,33 @@
+/* Palette Colori da Figma 
+Header - #FFFFFF;
+colore del Body : #F6F8F9;
+Task-color : 
+Add Task / Editorial - #14AAF5;
+Q1 Goals - #AB5DE6;
+Recruiting - #2CC6AB;
+Mobile - #FF9B00;
+Website - #EC4A9D;
+Sales - #A3D116;
+*/
+
+:root 
+{
+--body-color: #F6F8F9;
+--heading-color: #df2d4b;
+--Task-color : #14AAF5;
+--Invisible Task-Color/HR : #CED4D8;
+--secondary-color: #fb7087;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: 'Lato', sans-serif;
+}
+
+.Logo {
+    width: 100px;
+}
+
+
+
+
